@@ -1,0 +1,162 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body{
+    background-color: aquamarine;
+    padding: 30px;
+}
+.heading{
+    margin-bottom: 30px;
+    font-size: 35px;
+    animation: animateBlink 2s;
+    animation-delay: 3s;
+    animation-fill-mode:both;
+
+}
+@keyframes animateBlink{
+    0%{
+        color: orange;
+    }
+    100%{
+        color: violet;
+    }
+}
+.boxes{
+
+
+}
+.box{
+    border: 5px solid black;
+    padding: 20px;
+    background-color: white;
+    margin-bottom: 20px;
+
+}
+.box h4{
+    margin-bottom:10px ;
+
+}
+.box p{
+    color: gray;
+
+}
+/* fade effect */
+
+.fadeIn{
+    animation: fadeIn 2s;
+    animation-fill-mode: backwards;
+
+}
+.fadeIn:nth-child(1){
+    animation-delay: 0;
+
+}
+.fadeIn:nth-child(2){
+    animation-delay: 1s;
+
+}
+.fadeIn:nth-child(3){
+    animation-delay: 2s;
+
+}
+@keyframes fadeIn{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+/* slide effect */
+
+.slideInTop{
+    animation: slideInTop 3s;
+    animation-fill-mode: both;
+
+}
+.slideInTop:nth-child(1){
+    animation-delay: 0;
+}
+.slideInTop:nth-child(2){
+    animation-delay: 1s;
+}
+.slideInTop:nth-child(3){
+    animation-delay: 2s;
+}
+@keyframes slideInTop{
+    0%{
+        transform: translateY(-30px);
+        opacity: 0;
+
+    }
+    100%{
+        transform: translateY(0);
+        opacity: 1;
+
+
+    }
+}
+
+/* slide in left effect */
+
+.slideInLeft{
+    animation: slideInLeft 3s;
+    animation-fill-mode: both;
+
+}
+.slideInLeft:nth-child(1){
+    animation-delay: 0;
+}
+.slideInLeft:nth-child(2){
+    animation-delay: 1s;
+}
+.slideInLeft:nth-child(3){
+    animation-delay: 2s;
+}
+@keyframes slideInLeft{
+    0%{
+        transform: translateX(-100%);
+        opacity: 0;
+
+    }
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+
+
+    }
+}
+
+
+/* Zoomin effect */
+
+.zoomIn{
+    animation: zoomIn 2s;
+    animation-fill-mode: both;
+
+}
+.zoomIn:nth-child(1){
+    animation-delay:0 ;
+}
+.zoomIn:nth-child(2){
+    animation-delay:1s ;
+}
+.zoomIn:nth-child(3){
+    animation-delay:2s ;
+}
+@keyframes zoomIn{
+    0%{
+        transform: scale(0.5);
+        opacity: 0;
+
+    }
+    100%{
+        transform: scale(1);
+        opacity: 1;
+
+    }
+}
